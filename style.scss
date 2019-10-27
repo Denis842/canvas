@@ -1,0 +1,182 @@
+$font-main: Roboto;
+
+* {
+    margin:0;
+}
+
+header {
+    position:fixed;
+    width: 95%;  
+    height: 48px;
+    padding: 0 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+
+    .btn {
+        background:none;
+        border:0;
+    }
+
+    .header--menu-main {
+        height: 80%;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header--title {
+        font-size: 20px;
+        font-family: $font-main;
+        line-height: 1;
+    }
+
+    .header--menu-other {
+        height: 80%;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+main {
+    .main-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .main-block--paint {
+            width: 16%;
+            max-width: 300px;
+            padding-top: 40px;
+
+            .menu-interactive {
+                margin-top: 90px;
+                margin-left: 30px;
+                display:flex;
+                flex-flow: column;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+                
+                .btn-paint-menu {
+                    height: 48px;
+                    margin-bottom: 8px;
+                    display: flex;
+                    flex-flow: wrap;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        color:#fff;
+                        background: rgba(0, 0, 0, 0.541327);
+                    }
+
+                    img, .circle-color {
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 35px;
+                        margin-left: 20px;
+                    }
+
+                    p {
+                        font-family: $font-main;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 0.541327);
+                    }
+
+                    .circle-color {
+                        border:1px solid #000;
+                        border-radius: 50%;
+                    }
+                }
+
+                hr {
+                    width: 100%;
+                    height: 1px;
+                    background: rgba(0, 0, 0, 0.12);
+                    border:0;
+                }
+
+                &.paint--color {
+
+                    .circle-color{
+                        margin-right: 20px;
+                    }
+
+                    .prev--circle-current{
+                        background: #C4C4C4;
+                    }
+
+                    .prev--circle-prev {
+                        background: #41F795;
+                    }
+
+                    .red--circle-red {
+                        background: #F74141;
+                    }
+
+                    .blue--circle-blue {
+                        background: #41B6F7;
+                    }  
+                }
+            }
+        }
+        .main-block--canvas {
+            canvas#canvas {
+                height: 512px;
+                width: 512px;
+            }
+        }
+
+        .main-block--choose {
+            background: #fff;
+            margin-right: 30px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+        
+            .choose--title {
+                font-family: $font-main;
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.541327);
+                text-align: center;
+            }   
+
+            ul {
+
+                padding:0;
+
+                .choose--item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    list-style-type: none;
+                    padding: 5px 50px;
+                    height: 25px;
+                    cursor: pointer;
+                    color: rgba(0, 0, 0, 0.541327);
+                    font-family: $font-main;
+
+                    &:hover{
+                        background: rgba(179, 177, 177, 0.541327);
+                    }
+
+                    &.active {
+                        color: #fff;
+                        background: rgba(0, 0, 0, 0.541327);
+                    }
+                }
+
+
+
+            }
+
+
+            
+
+        }
+    }
+}

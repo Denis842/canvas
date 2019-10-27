@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <button class="header--menu-main btn"><img src="./assets/menu.png" alt="Icon menu"></button>
+        <h1 class="header--title">CodeJam - Pallete</h1>
+        <button class="header--menu-other btn"><img src="./assets/other.png" alt="Icon other menu"></button>
+    </header>
+    <main>
+        <article class="main-block">
+            <div class="main-block--paint">
+                <div class="paint--instruments menu-interactive">
+                    <div class="instruments--fill btn-paint-menu">
+                        <img src="./assets/fill.png" alt="Icon fill">
+                        <p>Paint bucket</p>
+                    </div>
+                    <div class="instruments--fill btn-paint-menu">
+                        <img src="./assets/dropper.png" alt="Icon dropper">
+                        <p>Choose color</p>
+                    </div>
+                    <hr class="instruments--hr">
+                    <div class="instruments--move btn-paint-menu">
+                        <img src="./assets/move.png" alt="Icon move">
+                        <p>Move</p>
+                    </div>
+                    <div class="instruments--transform btn-paint-menu">
+                        <img src="./assets/transform.png" alt="Icon transform">
+                        <p>Transform</p>
+                    </div>
+                </div>
+                <div class="paint--color menu-interactive">
+                    <div class="color--current btn-paint-menu">
+                        <div class="prev--circle-current circle-color"></div>
+                        <p>Current color</p>
+                    </div>
+                    <div class="color--prev btn-paint-menu">
+                        <div class="prev--circle-prev circle-color"></div>
+                        <p>Prev color</p>
+                    </div>
+                    <div class="color--red btn-paint-menu">
+                        <div class="red--circle-red circle-color"></div>
+                        <p>Current color</p>
+                    </div>
+                    <div class="color--blue btn-paint-menu">
+                        <div class="blue--circle-blue circle-color"></div>
+                        <p>Prev color</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-block--canvas">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="main-block--choose">
+                    <p class="choose--title">Choose size:</p>
+                    <ul>
+                        <li class="choose--item x4">4x4</li>
+                        <li class="choose--item x32">32x32</li>
+                        <li class="choose--item x256 active">512x512</li>
+                    </ul>
+                </div>
+
+
+
+        </article>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
